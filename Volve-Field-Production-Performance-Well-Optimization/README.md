@@ -96,45 +96,6 @@ All screening outputs, summary tables, and figures are reproducible from `notebo
   estimates
 - Flag the F-12 H downhole gauge failure to a surveillance/instrumentation workflow for repair
 
----
-
-## Repository Structure
-
-```
-Volve-Field-Production-Performance-Well-Optimization/
-│
-├── data/
-│   ├── Volve_production_data.xlsx        # Raw source data
-│   ├── producers_clean.csv                # Cleaned producer-only daily data
-│   ├── well_overview_summary.csv          # Section 4 output
-│   ├── water_cut_trend.csv                # Section 5 output
-│   ├── monthly_by_well.csv                # Section 6 monthly aggregates
-│   ├── decline_analysis.csv               # Section 6 output
-│   ├── operating_condition_correlations.csv  # Section 7 output
-│   ├── pressure_trend.csv                 # Section 7 output
-│   └── well_screening.csv                 # Section 8 output
-├── notebooks/
-│   └── Volve_Field_Production_Performance_Well_Optimization.ipynb
-├── figures/
-│   ├── 01_field_overview.png
-│   ├── 02_water_cut_trend.png
-│   ├── 03_monthly_production_trends.png
-│   ├── 04_operating_conditions_scatter.png
-│   ├── 05_downhole_pressure_trend.png
-│   └── 06_well_screening_scores.png
-├── README.md
-├── requirements.txt
-└── presentation/
-    └── (summary slide content — see RESUME_BULLETS.md / INTERVIEW_PREP.md for talking points)
-```
-
-## Setup
-
-```bash
-pip install -r requirements.txt
-jupyter notebook notebooks/Volve_Field_Production_Performance_Well_Optimization.ipynb
-```
-
 ## Data Source & License
 
 Volve field data released by Equinor under CC BY-NC-SA 4.0. This project uses it for educational,
